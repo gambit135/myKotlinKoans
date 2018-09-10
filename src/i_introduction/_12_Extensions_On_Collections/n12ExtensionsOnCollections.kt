@@ -17,7 +17,14 @@ fun todoTask12(): Nothing = TODO(
 )
 
 fun task12(): List<Int> {
-    todoTask12()
-    return arrayListOf(1, 5, 2)
+    val arrayList = arrayListOf(1, 5, 2)
+    //One sorts
+    arrayList.sortDescending()
+    //The other returns a sorted list
+    //return arrayList.sortedDescending()
+
+    //one liner, instead
+    return arrayListOf(1, 5, 2).sortedDescending()
+
 }
 

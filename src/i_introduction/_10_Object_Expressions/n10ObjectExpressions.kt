@@ -18,6 +18,9 @@ fun todoTask10(): Nothing = TODO(
 
 fun task10(): List<Int> {
     val arrayList = arrayListOf(1, 5, 2)
-    Collections.sort(arrayList, todoTask10())
+    //TODO: use comparator instead
+    Collections.sort(arrayList, Int::compareTo)
+    return arrayList.reversed()
+    //Collections.sort(arrayList) { x, y -> y - x}
     return arrayList
 }
